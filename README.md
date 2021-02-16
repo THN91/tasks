@@ -1,13 +1,11 @@
-All task must have  : 
+
+
+### Structure
 
 ```
 task_n
-|
-|_ index.js
-|
-|_ index.html
-|
-|_ index.css
-|
+|- index.js
+|- index.html
+|- index.css
 |_ README.md
 ```
