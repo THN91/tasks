@@ -1,8 +1,8 @@
-#Task 1  
+# Task 1  
 
 Remember how to connect files, add EventListener, and use CSS.
 
-##HTML
+## HTML
 
 * Create:
   1) 2 buttons for functionality 'add' and 'remove' eventListener.
