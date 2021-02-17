@@ -5,21 +5,28 @@ const buttonRemove = document.getElementById('buttonRemove');
 const text = document.getElementById('text');
 
 
-let finalText = ['Taras', 'Honcharuk', 'Nikolaevich'];
+let finalText = ['apple', 'grapes', 'peach'];
 
-// change name => addEventToInput
-function addWord(){
+function addEventToInput(){
     let value = input.value;
     finalText.push(value.split());
-    text.innerText = finalText.toString();
+    text.innerText = finalText.join(' ');
 }
 
-// change name => removeEventToInput
-function removeWord(){
+function removeEventToInput(){
+    let value = input.value;
 
+    if (value !== '') {
+        input.value = '';
+        console.log(value);
+  }
+    if (value == '') {
+        finalText.pop();
+        text.innerText = finalText.join(' ');
+    }
 }
 
-text.innerText = finalText.toString();
+text.innerText = finalText.join(' ');
 
-buttonAdd.addEventListener('click', addWord);
-buttonRemove.addEventListener('click', removeWord);
+buttonAdd.addEventListener('click', addEventToInput);
+buttonRemove.addEventListener('click', removeEventToInput);
