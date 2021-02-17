@@ -7,12 +7,14 @@ const text = document.getElementById('text');
 
 let finalText = ['Taras', 'Honcharuk', 'Nikolaevich'];
 
+// change name => addEventToInput
 function addWord(){
     let value = input.value;
     finalText.push(value.split());
     text.innerText = finalText.toString();
 }
 
+// change name => removeEventToInput
 function removeWord(){
 
 }
