@@ -13,7 +13,7 @@ function removeEventToInput(){
 }
 
 function startAdd(e) {
-    text.innerText = e.target.value
+    text.innerText = text.innerText + e.data;
 }
 
 buttonAdd.addEventListener('click', addEventToInput);
