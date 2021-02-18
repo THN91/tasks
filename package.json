@@ -1,0 +1,25 @@
+{
+  "name": "tasks",
+  "version": "1.0.0",
+  "description": "``` task_n |- index.js |- index.html |- index.css |_ README.md ```",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/THN91/tasks.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/THN91/tasks/issues"
+  },
+  "homepage": "https://github.com/THN91/tasks#readme",
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.9.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-loader": "^4.0.2"
+  }
+}
