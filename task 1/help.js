@@ -12,7 +12,7 @@ function addEventToInput(){
 }
 
 function removeEventToInput(){
-    input.removeEventListener('input')
+    input.removeEventListener('input', inputListener)
 }
 
 buttonAdd.addEventListener('click', addEventToInput);
