@@ -1,14 +1,15 @@
 const item = document.getElementById('item');
 const btn = document.getElementById('btn');
 
-item.addEventListener('click', clickItem)
+item.addEventListener('click', clickItem);
 
-btn.addEventListener('click', clickBtn)
+btn.addEventListener('click', clickBtn);
 
-function clickItem(event){
-
+function clickItem () {
+    console.log('click item');
 }
 
-const clickBtn = (event) => {
-
+function clickBtn (event) {
+    event.stopPropagation();
+    console.log('click button')
 }
