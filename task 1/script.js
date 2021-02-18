@@ -4,16 +4,16 @@ const buttonRemove = document.getElementById('buttonRemove');
 const text = document.getElementById('text');
 
 
-function addEventToInput(){
-  input.addEventListener('input', startAdd)
+function addEventToInput() {
+  input.addEventListener('input', startAdd);
 }
 
-function removeEventToInput(){
-    input.removeEventListener('input', startAdd)
+function removeEventToInput() {
+  input.removeEventListener('input', startAdd);
 }
 
 function startAdd(e) {
-    text.innerText = text.innerText + e.data;
+  text.innerText = text.innerText + e.data;
 }
 
 buttonAdd.addEventListener('click', addEventToInput);

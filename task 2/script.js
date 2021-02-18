@@ -1,10 +1,14 @@
-const click = document.getElementById('item2');
-const click1 = document.getElementById('item21');
+const item = document.getElementById('item');
+const btn = document.getElementById('btn');
 
-click.addEventListener('click', () => {
-    console.log('test')
-})
+item.addEventListener('click', clickItem)
 
-click1.addEventListener('click', () => {
-    console.log('test1')
-})
+btn.addEventListener('click', clickBtn)
+
+function clickItem(event){
+
+}
+
+const clickBtn = (event) => {
+
+}
