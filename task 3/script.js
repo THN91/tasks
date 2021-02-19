@@ -2,6 +2,9 @@ const item = document.getElementById('item');
 const btn = document.getElementById('btn');
 const addBlock = document.getElementById('addBlock');
 const list = document.getElementById('list');
+const wrapper = document.getElementsByClassName('wrapper-item');
+
+
 
 function clickItem () {
     console.log('click item');
@@ -12,18 +15,18 @@ function clickBtn (event) {
     console.log('click button')
 }
 
-function count() {
-
+function counter() {
+    return wrapper.length + 1;
 }
 
 function newBlock () {
     let wrapperItem = document.createElement('div');
     wrapperItem.className = 'wrapper-item';
-    wrapperItem.id = 'item';
+    wrapperItem.id = `item${counter()}`;
 
     let test = document.createElement('div');
     test.className = 'test';
-    test.innerText = `Test ${4}`;
+    test.innerText = `Test ${counter()}`;
 
     let btn = document.createElement('div');
     btn.className = 'btn';
@@ -38,7 +41,6 @@ function newBlock () {
     btn.appendChild(icon);
     list.appendChild(wrapperItem);
 }
-
 
 list.addEventListener('click', clickItem);
 btn.addEventListener('click', clickBtn);
