@@ -19,6 +19,7 @@ function count() {
 function newBlock () {
     let wrapperItem = document.createElement('div');
     wrapperItem.className = 'wrapper-item';
+    wrapperItem.id = 'item';
 
     let test = document.createElement('div');
     test.className = 'test';
@@ -26,6 +27,7 @@ function newBlock () {
 
     let btn = document.createElement('div');
     btn.className = 'btn';
+    btn.id = 'btn';
 
     let icon = document.createElement('div');
     icon.className = 'fas fa-cog';
@@ -37,6 +39,7 @@ function newBlock () {
     list.appendChild(wrapperItem);
 }
 
-item.addEventListener('click', clickItem);
+
+list.addEventListener('click', clickItem);
 btn.addEventListener('click', clickBtn);
 addBlock.addEventListener('click', newBlock);
