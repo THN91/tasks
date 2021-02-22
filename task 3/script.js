@@ -1,18 +1,18 @@
-const item = document.getElementById('item');
-const btn = document.getElementById('btn');
+const item = document.getElementById('item1');
+const btn = document.getElementById('btn1');
 const addBlock = document.getElementById('addBlock');
 const list = document.getElementById('list');
 const wrapper = document.getElementsByClassName('wrapper-item');
 
 
-
-function clickItem () {
-    console.log('click item');
+function clickItem (event) {
+    console.log(event.target.id);
+    event.stopPropagation()
 }
 
 function clickBtn (event) {
-    event.stopPropagation();
-    console.log('click button')
+    console.log(event.target.parentElement.id);
+    event.stopPropagation()
 }
 
 function counter() {
@@ -30,7 +30,7 @@ function newBlock () {
 
     let btn = document.createElement('div');
     btn.className = 'btn';
-    btn.id = 'btn';
+    btn.id = `btn${counter()}`;
 
     let icon = document.createElement('div');
     icon.className = 'fas fa-cog';
@@ -42,6 +42,6 @@ function newBlock () {
     list.appendChild(wrapperItem);
 }
 
-list.addEventListener('click', clickItem);
+item.addEventListener('click', clickItem);
 btn.addEventListener('click', clickBtn);
 addBlock.addEventListener('click', newBlock);
