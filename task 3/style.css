@@ -1,5 +1,8 @@
 * {
     box-sizing: border-box;
+    --small-size: 4px;
+    --middle-size: 8px;
+    --large-size: 12px;
 }
 
 body {
@@ -15,18 +18,18 @@ body {
 .container {
     background: #fff;
     min-width: 300px;
-    padding: 8px;
-    border-radius: 4px;
-    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    padding: var(--middle-size);
+    border-radius: var(--small-size);
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px var(--large-size) rgba(0,0,0,0.22);
 }
 
 .wrapper-item {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 4px;
-    margin: 4px 0;
-    border-radius: 4px;
+    padding: var(--small-size);
+    margin: var(--small-size) 0;
+    border-radius: var(--small-size);
 }
 
 .wrapper-item:hover {
@@ -34,11 +37,31 @@ body {
 }
 
 .btn {
-    border: 8px;
+    border: var(--middle-size);
     color: #000000;
-    padding: 8px;
+    padding: var(--middle-size);
 }
 
 .btn:active {
     transform: scale(0.94);
+}
+
+.addBlock {
+    background: #ff41f7;
+    color: #156892;
+    min-width: 300px;
+    padding: var(--middle-size);
+    margin: var(--large-size);
+    border-radius: var(--small-size);
+    border: none;
+    font-size: 16px;
+}
+.addBlock:hover {
+    background: #156892;
+    color: #ff41f7;
+}
+
+.test {
+    background: #9e65ff;
+    padding: 12px;
 }
